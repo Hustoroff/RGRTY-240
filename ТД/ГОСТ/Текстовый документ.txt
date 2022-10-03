@@ -1,0 +1,22 @@
+
+
+Program ABC;
+  Var
+    x,fl, tr:integer;
+    q,A,B,C,Common,Count_true,Count_false:boolean;
+  Begin
+    for x=1 to 50;
+      Begin
+       A:=x+10 < 20;
+       B:=(x- 5)!=A;
+       C:= 2*x>100;
+       q:= A& !(B + C);
+       
+       if q ==1
+       tr ++;
+       else
+       fl++;
+       Writeln('количество правлльных вариантов' tr);
+       Writeln('количество ложных выражений' fl);
+   End.
+end.
